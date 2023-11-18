@@ -259,3 +259,11 @@ npx tailwindcss init -p
 ```
 
 This command generates tailwind.config.cjs andpostcss.config.cjs configuration files.
+
+### NextUI
+
+<https://nextui.org/docs/frameworks/vite>
+
+```sh
+npm i @nextui-org/react framer-motion
+```
