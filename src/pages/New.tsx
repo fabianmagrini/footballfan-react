@@ -1,7 +1,14 @@
+import { newPosts } from "./data";
+import PostList from "../components/PostList";
+
 export default function New() {
-    return (
-      <div>
-        <h1 className="text-3xl font-bold text-center">New</h1> 
-      </div>
-    );
-  }
+  return (
+    <div className="container mx-auto">
+      <div className="grid gap-4 grid-cols-3 grid-rows-3"> 
+        {newPosts.map((post) => (
+          <PostList key={post._id} post={post} />
+        ))}
+      </div> 
+    </div> 
+  );
+}
